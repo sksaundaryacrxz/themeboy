@@ -1,6 +1,6 @@
 """
 1.    ctypes.windll.user32:Accesses the user32 DLL, which contains user-interface-related Windows API functions.
-2.    SystemParametersInfoW:The SystemParametersInfo function is used to query or set system-wide parameters. The W suffix indicates this is the wide-character (Unicode) version of the function.
+2.    SystemParametersInfoW:The SystemParametersInfo function is used to query or set system-wide parameters. The W suffix indicates this is the wide-character           (Unicode) version of the function.
 3.    Parameters of SystemParametersInfoW:
         BOOL SystemParametersInfoW(
             UINT  uiAction,
@@ -11,7 +11,7 @@
 4.    Each parameter in your line corresponds to one of these:
         i.    20 (uiAction):This specifies the action to perform. 20 corresponds to SPI_SETDESKWALLPAPER, which sets the desktop wallpaper.
         ii.   0 (uiParam): This is unused for the SPI_SETDESKWALLPAPER action, so it’s set to 0.
-        iii.  selected_wallpaper (pvParam):A pointer to the path of the image file (as a string) that will be set as the wallpaper. In Python, this string is passed directly.
+        iii.  selected_wallpaper (pvParam):A pointer to the path of the image file (as a string) that will be set as the wallpaper. In Python, this string is                     passed directly.
         iv.   3 (fWinIni):A combination of flags:
             a.    SPIF_UPDATEINIFILE (0x01): Updates the user profile in the registry with the new wallpaper path.
             b.    SPIF_SENDCHANGE (0x02): Sends a WM_SETTINGCHANGE message to all windows to notify them of the change.
